@@ -1,0 +1,61 @@
+body{
+	/*
+	font-family: Arial, Helvetica;
+	color: gray;
+	*/
+}
+
+/* Esto son títulos */
+h1{
+	color: pink;
+	font-size: 24px;
+}
+
+h2{
+	color: green;
+	font-size: 20px;
+}
+
+h3{
+	color: yellow;
+	font-size: 18px;
+}
+
+h4{
+	color: blue;
+	font-size: 14px;
+}
+
+h5{
+	color: red;
+	font-size: 12px;
+}
+
+/*editando el menú*/
+
+nav{
+	color: green;
+	font-size: 14px;
+	background-color: yellow;
+}
+
+a{
+	color: green;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.redesSociales{
+	color: blue;
+	background-color: #ccc;
+}
+
+.redesSociales:hover{
+	color: gray;
+	text-decoration: none;
+}
+
