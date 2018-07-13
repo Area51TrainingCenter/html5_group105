@@ -1,0 +1,16 @@
+
+/*
+#bg{
+	height: 200px;
+	background-color: gray;
+	display: block;
+	background: url(../image/gatito1.jpg) ;
+	background-repeat: no-repeat;
+}
+*/
+
+.bg{
+	height: 200px;
+	width: 400px;
+	background: url(../image/gatito1.jpg) no-repeat;
+}

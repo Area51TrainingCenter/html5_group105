@@ -1,0 +1,31 @@
+.redes{
+	background: url(../image/redes.gif) -25px -34px;
+	width: 100px;
+	height: 100px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.facebook{
+	background-position: -25px -34px;
+}
+
+.twitter{
+	background-position: -150px -34px;
+}
+
+.youtube{
+	background-position: -276px -34px;
+}
+
+.facebook:hover{
+	background-position: -25px -170px;
+}
+
+.twitter:hover{
+	background-position: -150px -170px;
+}
+
+.youtube:hover{
+	background-position: -276px -170px;
+}

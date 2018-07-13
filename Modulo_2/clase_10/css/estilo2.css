@@ -1,0 +1,37 @@
+/*
+ejercicio 2
+*/
+
+nav{
+	background: gray;
+}
+
+header li{
+	color: white;
+}
+
+div > p {
+	color: red;
+}
+/*
+.miDiv p{
+
+}
+
+main div p{
+
+}
+*/
+/*
+footer li:first-child{
+	color: blue;
+}
+*/
+
+footer > nav li:first-child{
+	color: blue;
+}
+
+div nav li:last-child{
+	color:red;
+}

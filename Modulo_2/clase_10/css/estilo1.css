@@ -1,0 +1,40 @@
+*{
+	background-color: gray;
+	font-family: Arial, Helvetica, serif;
+}
+
+h1{
+	background-color: yellow;
+}
+#algunID{}
+.algunaClase{}
+
+footer h1{
+	background-color: red;
+}
+
+main p{
+	background-color: pink;
+}
+
+main > p{
+	background-color: blue;
+}
+
+div + p{
+	background-color: orange;
+}
+
+footer .miDiv{
+	background-color: black;
+	color: white;
+}
+
+header li:first-child, .seleccionado{
+	color: red;
+}
+
+footer li:last-child{
+	background-color: blue;
+	color: white;
+}
