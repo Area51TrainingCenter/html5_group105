@@ -1,0 +1,32 @@
+body{
+	font-family: 'Hanalei Fill', Helvetica, arial, sans-serif;
+}
+
+h1{
+	font-family: Oswald, Helvetica, arial, sans-serif;
+}
+
+.container_12{
+	background-color: white;
+	height: 50px;
+}
+
+#menu {
+	background-color: orange;
+	text-align: right;
+}
+
+#menu li{
+	display: inline-block;
+	border-right: 1px white solid;
+	padding: 0 5px;
+}
+
+#menu li:last-child{
+	border-right: 0;
+}
+
+#logo, #menu{
+	padding: 15px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,75 @@
+body{
+	background-color: lightgray;
+}
+
+.container_12 {
+  background-image: url(../img/12_col.gif);
+}
+
+.container_12,
+.container_16,
+.container_24 {
+  background-color: #fff;
+  background-repeat: repeat-y;
+  margin-bottom: 20px;
+}
+
+#wrapper{
+	background-color: gray;
+	height: 1000px;
+}
+
+#logo{
+	background-color: pink;
+	height: 40px;
+}
+
+#menu{
+	background-color: purple;
+	height: 40px;
+}
+
+h1, h2{
+	background-color: orange;
+	height: 40px;
+}
+
+nav, li{
+	background-color: yellow;
+	height: 40px;
+	display: inline-block;
+}
+
+p, span, a{
+	background-color: blue;
+	height: 40px;
+	color: white;
+	padding: 10px;
+}
+
+div{
+	background-color: red;
+	height: 40px;
+}
+
+.miColor{
+	background-color: #9b59b6;
+	height: 40px;
+}
+
+.miColor2{
+	background-color: #27ae60;
+	height: 40px;
+	color: white;
+}
+
+input{
+	margin: 7px;
+	padding: 5px;
+	border: 0.5px solid gray;
+	border-radius: 5px;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-position: 430px;
+	outline: none;
+}
