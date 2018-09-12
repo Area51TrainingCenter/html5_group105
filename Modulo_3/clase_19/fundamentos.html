@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 19</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script type="text/javascript">
+	/*
+		comentario en bloque
+		:)
+	*/
+
+	//comentario de línea
+
+		var nombre 		= "Juan"
+		var apellido 	= "Perez"
+		var edad 		= 20
+
+		var alumno 		= 	nombre + 
+							" " + 
+							apellido
+
+		var edadAlumno 	= " Edad: " + edad + " años"
+	
+		console.log( "Alumno: " + alumno + edadAlumno)
+
+		//----- otro alumno
+		/*
+		var nombre2 	= "Luis"
+		var apellido2 	= "Garcia"
+		var edad2 		= 23
+
+		var alumno2 		= 	nombre2 + 
+							" " + 
+							apellido2
+
+		var edadAlumno2 	= " Edad: " + edad2 + " años"
+	
+		console.log( "Alumno: " + alumno2 + edadAlumno2)
+		*/
+
+		//reutilizar variable
+
+		nombre 		= "Luis"
+		apellido 	= "García"
+		edad 		= 23
+
+		alumno 		= 	nombre + " " + apellido
+		edadAlumno = " Edad: " + edad + " años"
+
+		console.log( "Alumno: " + alumno + edadAlumno)
+
+		//
+
+		var numero1 = 3
+		var numero2 = 4
+
+		var numero3 = numero1 + numero2
+
+		console.log(   numero3 )
+
+		console.log( "Mi número es: " + numero3 )
+
+		console.log ( numero1 + numero3  )
+		console.log ( numero3 - numero1  )
+		console.log ( numero3 * numero2  )
+		console.log ( numero3 / numero1  )
+
+		console.log ( numero3 - numero1 * numero2  )
+
+		//ejercicio 1
+		//obtener el precio total con IGV de un producto X
+
+		var precioProducto = 118
+		var igv = 1.18  
+
+		console.log( precioProducto * igv )
+
+		//ejercicio 2
+		//obtener del precio total sin IGV
+
+		console.log( precioProducto / igv )
+
+		//ejercicio 3 kambista.com
+
+		//ejercicio 4
+		// Obtener el área de un cuadrado
+		// obtener el área de un rectángulo
+		// obtener el área de un círculo
+
+
+		//ejercicio 5
+		// obtener el promedio de 3 notas
+
+		//ejercicio 6
+		// obtener el promedio de 3 notas que, una de ellas, es el promedio de 5 prácticas
+
+		var arreglo = [ "Caterina",
+						"Fernando", 
+						"Yubitza", 
+						"elder", 
+						alumno, 30, true, false ]
+
+		console.log(arreglo)
+		console.log(arreglo[5] )
+		console.log( "Cantidad de elementos: " + arreglo.length )
+
+		var notas = [12, 14, 15]
+		console.log( notas.length )
+
+
+	</script>
+
+</body>
+</html>

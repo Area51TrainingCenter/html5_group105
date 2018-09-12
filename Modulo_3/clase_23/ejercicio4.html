@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animaciones con jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#caja1").click(function(){
+				
+				
+				$("#caja1").animate({
+					left: '200px'
+				},500)
+				$("#caja2").animate({
+					left: '200px'
+				},750)
+				$("#caja3").animate({
+					left: '200px'
+				},1000)
+				$("#caja4").animate({
+					left: '200px'
+				},1250)
+				$("#caja5").animate({
+					left: '200px'
+				},1500)
+				
+			})
+
+
+		})
+		
+	</script>
+
+	<style type="text/css">
+		.caja{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin-top: 5px;
+			color: white;
+			padding: 0px;
+			text-align:center;
+			border: 1px solid red;
+		}
+		#caja1{
+			top: 0px;
+		}
+		#caja2{
+			top: 100px;
+		}
+		#caja3{
+			top: 200px;
+		}
+		#caja4{
+			top: 300px;
+		}
+		#caja5{
+			top: 400px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="caja1" class="caja">caja1</div>
+	
+		<div id="caja2" class="caja">caja2</div>
+	
+	<div id="caja3" class="caja">caja3</div>
+	<div id="caja4" class="caja">caja4</div>
+	<div id="caja5" class="caja">caja5</div>
+
+</body>
+</html>

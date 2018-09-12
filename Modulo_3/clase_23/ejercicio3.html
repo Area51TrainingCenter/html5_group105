@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animaciones con jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#caja1").click(function(){
+				$("#caja2").slideUp();
+			})
+
+			$("#caja3").click(function(){
+				$("#caja2").slideDown();
+			})
+
+			$("#caja4").click(function(){
+				$("#caja5").slideToggle("fast");
+			})
+
+		})
+		
+	</script>
+
+	<style type="text/css">
+		.caja{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin-top: 5px;
+			color: white;
+			padding: 10px;
+			
+			text-align:center;
+		}
+		#caja2{
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div id="caja1" class="caja">caja1</div>
+	<div id="caja2" >
+		<div class="caja">caja2</div>
+	</div>
+	<div id="caja3" class="caja">caja3</div>
+	<div id="caja4" class="caja">caja4</div>
+	<div id="caja5" class="caja">caja5</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1</title>
+
+	<style type="text/css">
+		#caja{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			margin-top: 5px;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		//document.getElementById("caja").style.display = "none";
+
+		//$(selector).accion(funcion)
+
+		$(document).ready(  function(){
+			//alert(true)
+			//document.getElementById("caja").style.display = "none";
+			/*
+			$("#caja").hide();
+			$("#caja").show();
+
+			$(".box").hide();
+			*/
+
+			//$("#contenedor div:last-child").hide();
+			//$("#contenedor div:first-child").hide();
+
+			$("#caja").click(function(){
+				//alert("hola desde jQuery");
+				$("#contenedor p").hide();
+				$(this).hide();
+			})
+
+			$("#miCaja").click(function(){
+				$("#contenedor p").show();
+			})
+		})
+
+		function saludar(){
+			alert("hola");
+		}
+
+	</script>
+
+</head>
+<body>
+	<div id="contenedor">
+		<div id="caja"></div>
+		<div id="miCaja" class="box"></div>
+		<div class="box" onclick="saludar()"></div>
+		<p class="box"></p>
+	</div>
+</body>
+</html>

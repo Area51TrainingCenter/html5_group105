@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animaciones con jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#caja2").hide(200);
+
+			$("#caja1").click(function(){
+				$("#caja2").show("slow");
+			})
+
+			$("#caja2").click(function(){
+				$(this).hide("slow");
+			})
+
+			$("#caja3").click(function(){ 
+				$("#caja4").toggle("fast");
+			})
+
+			$("#caja4").click(function(){
+				$("#caja1").toggle("slow", function(){
+					//alert("fin de animación");
+					$("#caja2").toggle("slow");
+				});
+			})
+
+
+		})
+		
+	</script>
+
+	<style type="text/css">
+		.caja{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin-top: 5px;
+			color: white;
+			padding: 10px;
+			
+			text-align:center;
+		}
+		#caja2{
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div id="caja1" class="caja">caja1</div>
+	<div id="caja2" >
+		<div class="caja">caja2</div>
+	</div>
+	<div id="caja3" class="caja">caja3</div>
+	<div id="caja4" class="caja">caja4</div>
+
+</body>
+</html>

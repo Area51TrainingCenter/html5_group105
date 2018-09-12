@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var n1 = 5
+		var n2 = 5
+		var nombre = "juan"
+		var apellido = "garcia"
+
+		if ( n2 > n1 ) {
+			console.log(" n2 es mayor")
+		}
+
+		if ( n2 < n1 ) 
+		{
+			console.log("n1 es mayor")
+		}
+
+		if ( nombre == "juan" ){
+			console.log("Bienvenido usuario Juan")
+		}
+
+		var nota1 = 11
+		var nota2 = 12
+		var nota3 = 5
+
+		function obtenerPromedio(_n1, _n2, _n3){
+			var promedio = ( _n1 + _n2 + _n3)/3
+			if( promedio > 10.4){
+				console.log( "Aprobado: " + promedio)
+			}
+
+			if( promedio < 10.4){
+				console.log( "Desaprobado: " + promedio)
+			}
+			//console.log(promedio)
+		}
+
+		obtenerPromedio(nota1, nota2, nota3)
+
+		function obtenerPromedio2(_n1, _n2, _n3){
+			var promedio = ( _n1 + _n2 + _n3)/3
+			if ( promedio > 10.4) {
+				console.log( "*** Aprobado: " + promedio)
+			}else{
+				console.log( "*** Desaprobado: " + promedio)
+			}
+		}
+
+		obtenerPromedio2(nota1, nota2, nota3)
+
+
+		nombre = "pedro"
+
+		function validarUsuario(user){
+
+			if( user == nombre){
+				console.log("Bienvenido " + user)
+			}else{
+				console.log("Usuario inválido")
+			}
+
+		}
+
+		validarUsuario( "Luis" )
+		validarUsuario( "pedro" )
+
+		//------
+		var usuario = "luis"
+		var password = 12345
+
+		if ( usuario == "luis"){
+
+			if( password == 12345){
+				console.log("---- Bienvenido " + usuario);
+			}else{
+				console.log("el password es incorrecto");
+			}
+
+		}else{
+			console.log("este usuario no existe");
+		}
+
+		if ( usuario == "luis" && password == 12345) {
+			console.log("---- Bienvenido " + usuario);
+		}else{
+			console.log("Datos incorrectos");
+		}
+
+		var usuario1 = "juan"
+		var usuario2 = "pedro"
+
+		if ( usuario1 == "juan" || usuario2 == "pedro" ){
+			console.log("es conocido")
+		}
+
+
+
+	</script>
+
+</body>
+</html>

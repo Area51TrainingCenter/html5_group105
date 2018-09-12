@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 2</title>
+
+	<style type="text/css">
+
+		body{
+			font-family: verdana, arial, sans-serif;
+
+		}
+
+		span, li, a{
+			cursor: pointer;
+		}
+		h4{
+			margin: 0;
+		}
+		
+		#menu nav{
+			display: inline-block;
+		}
+
+		#menu nav div{
+			position: absolute;
+			display: none;
+			background-color: gray;
+			width: 200px;
+			padding: 5px;
+		}
+
+		#menu nav:hover div{
+			display: block;
+		}
+
+		#menu li{
+			color: white;
+			padding: 5px;
+			background-color: lightblue;
+			margin: 5px;
+			display: inline-block;
+		}
+
+		#menu li:hover{
+			color: red;
+		}
+
+		#mensaje{
+			position: fixed;
+			z-index: 1;
+		}
+
+		#mensaje > div:first-child{
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.7);
+		}
+
+		#mensaje > div:last-child{
+			position: fixed;
+			background-color: white;
+			top: 50%;
+			left: 0;
+			right: 0;
+			transform: translate(0, -50%);
+		}
+
+		#info{
+			width: 60%;
+			margin: 0 auto;
+			padding: 50px;
+		}
+
+		#acciones{
+			float: right;
+		}
+
+		#acciones a{
+			background-color: green;
+			padding: 5px 20px;
+			color: white;
+			text-decoration: none;
+		}
+
+		#acciones a:last-child{
+			background-color: red;
+		}
+
+		#acciones a:hover{
+			box-shadow: 2px 2px 2px gray;
+			background-color: white;
+			color: gray;
+		}
+
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$("#acciones a:first-child").click(function(){
+				$("#mensaje").hide();
+			})
+
+			$("#menu li:first-child").click(function(){
+				$("#mensaje").show();
+			})
+
+		})
+
+	</script>
+
+</head>
+<body>
+
+	<div id="mensaje">
+		<div></div>
+		<div>
+			<div id="info">
+				<h4>¿Quieres continuar?</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div id="acciones">
+					<a href="#">Aceptar</a>
+					<a href="#">Cancelar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+		<div id="menu">
+			<nav>
+				<span>Menu1</span>
+				<div>
+					<li>link1</li>
+					<li>link2</li>
+					<li>link3</li>
+					<li>link4</li>
+					<li>link5</li>
+					<li>link6</li>
+				</div>
+			</nav>
+			<span>Menu2</span>
+			<span>Menu3</span>
+			<span>Menu4</span>
+			<span>Menu5</span>
+		</div>
+	</header>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		div{
+			width: 200px;
+			height: 150px;
+			background-color: gray;
+			padding: 20px;
+			margin: 20px;
+		}
+		input{
+			color: gray;
+			display: block;
+			height: 30px;
+			margin-bottom: 10px;
+			border: 1 solid lightgray;
+			width: 100%;
+		}
+		button{
+			background-color: blue;
+			color: white;
+			border: 0;
+			width: 100%;
+			height: 40px;
+			border-radius: 5px;	
+		}
+		button:hover{
+			color:yellow;
+		}
+
+	</style>
+</head>
+<body>
+<!--
+	<input 	type="text" id="numero1" 
+			placeholder="Agregar nota 1">
+
+	<input 	type="text" id="numero2" 
+			placeholder="Agregar nota 2">
+
+	<input 	type="text" id="numero3" 
+			placeholder="Agregar nota 3">
+
+	<button onclick="saludar()" >Calcular</button>
+	<button onclick="borrar()" >Reset</button>
+-->
+	<div>
+		<input 	type="text" id="user" 
+			placeholder="Ingresa tu usuario">
+
+		<input 	type="password" id="pass" 
+			placeholder="Ingresa tu password">
+
+		<button onclick="validar()" >Ingresar</button>
+		
+	</div>
+
+
+	<script type="text/javascript">
+
+		function validar(){
+			var user = document.getElementById("user").value
+			var pass = document.getElementById("pass").value
+
+			if(user == "" || pass == ""){
+				alert("Ingresa todos los datos");
+			}else{
+				alert( "Bienvenido " + user + " " + pass);
+			}
+
+		} 
+
+		function saludar(){
+
+			var dato1 = parseInt(document.getElementById("numero1").value)
+			var dato2 = parseInt(document.getElementById("numero2").value)
+			var dato3 = parseInt(document.getElementById("numero3").value)
+			console.log("Notas: " + dato1 + " - " + dato2 + " - " + dato3)
+
+			var nuevoPromedio = (dato1+dato2+dato3)/3
+			console.log(nuevoPromedio)
+
+			calcular(nuevoPromedio)
+		}
+
+		function borrar(){
+			document.getElementById("numero1").value = ""
+			document.getElementById("numero2").value = ""
+			document.getElementById("numero3").value = ""
+		}
+
+
+		
+		var n1 = 12
+		var n2 = 13
+		var n3 = 2
+
+		var promedio =  (n1+n2+n3)/3
+
+		//console.log("Promedio Final: " + promedio)
+		//alert("Promedio Final: " + promedio)
+
+		function calcular(miPromedio){
+			//definir aprobado o desaprobado
+			if( miPromedio < 10.5 ){
+				alert("Está desaprobado")
+			}else{
+				//alumno aprobado
+				if ( miPromedio == 20 ){
+					alert("Promedio Perfecto")
+				}else{
+
+					if(miPromedio < 13){
+						alert("BIEN")
+					}else{
+						alert("EXCELENTE")
+					}
+				}
+			}	
+		}
+
+		//calcular(20)
+
+	</script>
+
+</body>
+</html>
