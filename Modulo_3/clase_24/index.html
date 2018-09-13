@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			var speed = 500;
+
+
+			$("#linkContactos").click(function(){
+
+				$("html, body").animate({
+					scrollTop: $("#sec-contactos").offset().top
+				}, speed)
+
+			})
+
+			$("#linkCursos").click(function(){
+				$("html, body").animate({
+					scrollTop: $("#sec-cursos").offset().top
+				}, speed)
+			})
+
+			$("#linkNosotros").click(function(){
+				$("html, body").animate({
+					scrollTop: $("#sec-nosotros").offset().top
+				}, speed)
+			})
+
+			$("#linkInicio").click(function(){
+				$("html, body").animate({
+					scrollTop: $("#sec-inicio").offset().top
+				}, speed)
+			})
+
+
+		})
+
+	</script>
+
+	<style type="text/css">
+
+		body{
+			margin: 0;
+			font-family: Verdana;
+		}
+
+		header{
+
+			background-color: rgba(0,0,0,0.5);
+			color: white;
+			height: 50px;
+			padding: 15px;
+			box-sizing: border-box;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+		}
+
+		span{
+			padding-right: 20px;
+			cursor: pointer;
+		}
+
+		span:hover{
+			color: yellow;
+			text-decoration: underline;
+		}
+
+		.caja{
+			background-color: yellow;
+			border: 0px solid red;
+			height: 500px;
+			margin-bottom: 20px;
+			padding-top: 60px;
+		}
+
+		/* mejorando las secciones */
+
+		#sec-inicio{
+			background-image: url("https://picsum.photos/1920/800");
+		}
+
+		#sec-inicio > div{
+			width: 40%;
+			margin: 0 auto;
+			padding-top: 200px;
+		}
+
+		#sec-inicio input{
+			width: 80%;
+			border-radius: 5px;
+			border: 1px solid lightgray;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		#sec-inicio span{
+			width: 20%;
+			background-color: blue;
+			padding: 10px 20px;
+			color: white;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+
+		#sec-inicio span:hover{
+			color: black;
+			background-color: lightblue;
+		}
+
+		#sec-contactos > div:first-child{
+			width: 50%;
+			display: inline-block;
+		}
+
+		#sec-contactos > div:last-child{
+			display: inline-block;
+		}
+
+	</style>
+</head>
+
+
+<body>
+
+	<header>
+		<nav>
+			<span id="linkInicio">Inicio</span>
+			<span id="linkCursos">Cursos</span>
+			<span id="linkNosotros">Nosotros</span>
+			<span id="linkContactos">Contactos</span>
+		</nav>
+	</header>
+
+	<main>
+		<div id="sec-inicio" class="caja">
+
+			<div>
+				<input type="text" name="" placeholder="Buscar cursos">
+				<span>Buscar</span>
+			</div>
+
+			
+
+		</div>
+		<div id="sec-cursos" class="caja">Contenido Cursos</div>
+		<div id="sec-nosotros" class="caja">Contenido Nosotros</div>
+		<div id="sec-contactos" class="caja">
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1403513243604!2d-77.02808468561702!3d-12.102542746234702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86c238ee0c3%3A0x798b198f446beb6a!2sArea51+Training+Center!5e0!3m2!1sen!2spe!4v1536855853244" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+			<div>
+				<h2>Completa el siguiente formulario</h2>
+				<input type="text" name="" placeholder="Nombre">
+				<input type="email" name="" placeholder="Email">
+				<input type="text" name="" placeholder="Curso de interés">
+			</div>
+		</div>
+	</main>
+
+
+	<footer class="caja">Footer</footer>
+
+</body>
+</html>
