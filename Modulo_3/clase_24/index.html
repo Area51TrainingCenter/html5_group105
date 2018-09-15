@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Landing</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -38,6 +39,13 @@
 			})
 
 
+			$("#top").click(function(){
+				$("html, body").animate({
+					scrollTop: $("#sec-inicio").offset().top
+				}, speed)
+			})
+
+
 		})
 
 	</script>
@@ -62,6 +70,12 @@
 			left: 0;
 		}
 
+		footer{
+			background-color: black;
+			color: white;
+			text-align: center; padding: 20px;
+		}
+
 		span{
 			padding-right: 20px;
 			cursor: pointer;
@@ -73,7 +87,7 @@
 		}
 
 		.caja{
-			background-color: yellow;
+			/*background-color: yellow;*/
 			border: 0px solid red;
 			height: 500px;
 			margin-bottom: 20px;
@@ -114,20 +128,96 @@
 			background-color: lightblue;
 		}
 
-		#sec-contactos > div:first-child{
-			width: 50%;
+		#sec-nosotros{
+			/*height: 700px;*/
+		}
+
+		#sec-nosotros > div{
+			position: absolute;
+			width: 100%;
+			height: 500px;
+		}
+
+		#sec-nosotros > div:first-child{
+			background-image: url("https://picsum.photos/1921/800");
+			opacity: 0.2;
+		}
+
+
+		.contenidoNosotros{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+
+		#sec-contactos div{
 			display: inline-block;
+			width: 50%;
+			box-sizing: border-box;
+		}
+
+		#sec-contactos > div:first-child{
+			
 		}
 
 		#sec-contactos > div:last-child{
-			display: inline-block;
+			vertical-align: top;
+			padding: 20px;
 		}
+
+		#sec-contactos{
+			margin: 0;
+		}
+
+		#sec-contactos h2{
+			margin: 0;
+		}
+
+		#sec-contactos input, 
+		#sec-contactos textarea{
+			margin: 0;
+			width: 100%;
+			padding: 10px;
+			margin-top: 10px;
+			border: 1px solid lightgray;
+			border-radius: 5px;
+		}
+
+		#sec-contactos button{
+			margin: 0;
+			background-color: blue;
+			color: white;
+			padding: 20px;
+			margin-top: 10px;
+			width: 100%;
+			border-radius: 5px;
+			font-size: 18px;
+		}
+
+		#top{
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			background-color: blue;
+			color: white;
+			margin: 20px;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 10px;
+			z-index: 1;
+		}
+
+		
 
 	</style>
 </head>
 
 
 <body>
+
+	<div id="top">Subir</div>
 
 	<header>
 		<nav>
@@ -150,23 +240,30 @@
 
 		</div>
 		<div id="sec-cursos" class="caja">Contenido Cursos</div>
-		<div id="sec-nosotros" class="caja">Contenido Nosotros</div>
-		<div id="sec-contactos" class="caja">
+		<div id="sec-nosotros" class="caja">
+			<div></div>
 			<div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1403513243604!2d-77.02808468561702!3d-12.102542746234702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86c238ee0c3%3A0x798b198f446beb6a!2sArea51+Training+Center!5e0!3m2!1sen!2spe!4v1536855853244" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="contenidoNosotros">
+				<h2>Sobre nosotros</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non blanditiis eos asperiores facilis harum quod provident qui, aliquam rem maiores vero dolore esse. Placeat itaque veniam voluptatum enim rem mollitia.</p>
+				</div>
 			</div>
+		</div>
 
-			<div>
+
+		<div id="sec-contactos" class="caja">
+			<div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1403513243604!2d-77.02808468561702!3d-12.102542746234702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86c238ee0c3%3A0x798b198f446beb6a!2sArea51+Training+Center!5e0!3m2!1sen!2spe!4v1536855853244" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></div><div>
 				<h2>Completa el siguiente formulario</h2>
 				<input type="text" name="" placeholder="Nombre">
 				<input type="email" name="" placeholder="Email">
 				<input type="text" name="" placeholder="Curso de interés">
-			</div>
+				<textarea name="" id="" cols="10" rows="10"></textarea>
+				<button>Enviar</button></div>
 		</div>
 	</main>
 
 
-	<footer class="caja">Footer</footer>
+	<footer class="caja">® Desarrollado con amor en la clase</footer>
 
 </body>
 </html>
